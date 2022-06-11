@@ -7,23 +7,14 @@ public class Teacher {
     private int id = 1000;
     private String Name;
     private int Salary;
-    Scanner input = new Scanner(System.in);
+    Scanner input;
 
-    Teacher(){
-        this.id++;
-        try{
-            System.out.print("Enter Teacher's Name: ");
-            this.Name = input.nextLine();
-            System.out.print("Enter Teacher's Salary: ");
-            this.Salary = input.nextInt();
-        }
-        catch (InputMismatchException e){
-            System.out.println("You Have Entered A wrong Input!");
-        }finally {
-            input.close();
-        }
-        System.out.println(this);
 
+
+    public Teacher(String name, int salary){
+        this.id = id++;
+        this.Name = name;
+        this.Salary = salary;
     }
 
     @Override

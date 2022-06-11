@@ -9,29 +9,12 @@ public class Student {
     private int AmountPaid;
     private int AmountTotal;
 
-    Scanner input = new Scanner(System.in);
-    Student(){
+
+    public Student(String name , int AmountPaid , int AmountTotal){
         id++;
-        try {
-            System.out.print("Enter Student's Name: ");
-            this.Name = input.nextLine();
-            System.out.print("Enter Amount Paid By Student: ");
-            this.AmountPaid = input.nextInt();
-            System.out.print("Enter Student's Total: ");
-            this.AmountTotal = input.nextInt();
-        }catch (InputMismatchException e){
-            System.out.println("You Entered A Wrong Input Format! ");
-        }
-        finally {
-            input.close();
-        }
-
-
-        System.out.println(this);
-
-
-
-
+        this.Name = name;
+        this.AmountPaid = AmountPaid;
+        this.AmountTotal = AmountTotal;
     }
 
     @Override

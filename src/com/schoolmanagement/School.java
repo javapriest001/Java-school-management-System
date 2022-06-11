@@ -9,6 +9,7 @@ public class School {
     School(Student student , Teacher teacher){
         this.students = student;
         this.teachers = teacher;
+        System.out.println(this);
     }
 
     @Override
