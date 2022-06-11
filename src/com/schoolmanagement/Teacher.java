@@ -12,7 +12,7 @@ public class Teacher {
 
 
     public Teacher(String Name, int salary){
-        this.id = id++;
+        this.id = this.id++;
         this.Name = Name;
         this.Salary = salary;
     }
@@ -21,7 +21,7 @@ public class Teacher {
     public String toString() {
         return "Teacher{" +
                 "id=" + id +
-                ", Name='" + Name + '\'' +
+                ", NameTest='" + Name + '\'' +
                 ", Salary=" + Salary +
                 '}';
     }
