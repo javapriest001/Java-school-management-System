@@ -10,9 +10,9 @@ public class Student {
     private int AmountTotal;
 
 
-    public Student(String name , int AmountPaid , int AmountTotal){
+    public Student(String Name , int AmountPaid , int AmountTotal){
         id++;
-        this.Name = name;
+        this.Name = Name;
         this.AmountPaid = AmountPaid;
         this.AmountTotal = AmountTotal;
     }

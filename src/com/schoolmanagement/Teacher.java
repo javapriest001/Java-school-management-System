@@ -7,13 +7,13 @@ public class Teacher {
     private int id = 1000;
     private String Name;
     private int Salary;
-    Scanner input;
 
 
 
-    public Teacher(String name, int salary){
+
+    public Teacher(String Name, int salary){
         this.id = id++;
-        this.Name = name;
+        this.Name = Name;
         this.Salary = salary;
     }
 

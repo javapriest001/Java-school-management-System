@@ -17,8 +17,6 @@ public class School {
         return "School{" +
                 "students=" + students +
                 ", teachers=" + teachers +
-                ", AmountEarned=" + AmountEarned +
-                ", AmountSpent=" + AmountSpent +
                 '}';
     }
 }
